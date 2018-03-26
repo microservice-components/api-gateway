@@ -11,6 +11,6 @@ eureka:
 
 spring:
     application:
-        name: gateway
+        name: api-gateway
     profiles:
         active: ${activeprofile:dev}
