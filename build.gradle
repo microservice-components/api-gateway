@@ -42,6 +42,7 @@ repositories {
 
 
 ext {
+	springfoxVersion = '2.7.0'
 	springCloudVersion = 'Finchley.M9'
 }
 
@@ -52,6 +53,8 @@ dependencies {
 	compile('org.springframework.cloud:spring-cloud-starter-zipkin')
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	compile("org.jetbrains.kotlin:kotlin-reflect")
+	compile("io.springfox:springfox-swagger2:${springfoxVersion}")
+	compile("io.springfox:springfox-swagger-ui:${springfoxVersion}")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
