@@ -1,3 +1,6 @@
+zuul:
+    ignoredPatterns: /swagger-ui.html, /webjars/**, /v2/api-docs/**, /swagger-resources/**, /info
+
 spring:
     zipkin:
         baseUrl: http://zipkin/
