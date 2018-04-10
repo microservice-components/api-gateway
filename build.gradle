@@ -44,6 +44,7 @@ repositories {
 ext {
 	springfoxVersion = '2.7.0'
 	springCloudVersion = 'Finchley.M9'
+	jwtVersion = "0.9.0"
 }
 
 dependencies {
@@ -55,6 +56,7 @@ dependencies {
 	compile("org.jetbrains.kotlin:kotlin-reflect")
 	compile("io.springfox:springfox-swagger2:${springfoxVersion}")
 	compile("io.springfox:springfox-swagger-ui:${springfoxVersion}")
+	compile("io.jsonwebtoken:jjwt:${jwtVersion}")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

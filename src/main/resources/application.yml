@@ -15,3 +15,10 @@ info:
         version: 0.0.1-SNAPSHOT
         title: gateway
         description: Spring netflix zuul
+
+# Jwt相关
+audience:
+    clientId: your_client_id
+    base64Secret: your_secret
+    name: application_name
+    expiresSecond: 2592000 # 三十天

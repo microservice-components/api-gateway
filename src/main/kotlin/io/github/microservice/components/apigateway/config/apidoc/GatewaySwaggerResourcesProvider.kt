@@ -1,6 +1,5 @@
 package io.github.microservice.components.apigateway.config.apidoc
 
-import io.github.microservice.components.apigateway.config.Constants
 import org.slf4j.LoggerFactory
 import org.springframework.cloud.client.discovery.DiscoveryClient
 import org.springframework.cloud.netflix.zuul.filters.RouteLocator
@@ -9,6 +8,7 @@ import org.springframework.context.annotation.Profile
 import org.springframework.stereotype.Component
 import springfox.documentation.swagger.web.SwaggerResource
 import springfox.documentation.swagger.web.SwaggerResourcesProvider
+import io.github.microservice.components.apigateway.config.Constants
 
 /**
  * Retrieves all registered microservices Swagger resources.
