@@ -17,8 +17,6 @@ info:
         description: Spring netflix zuul
 
 # Jwt相关
-audience:
-    clientId: your_client_id
-    base64Secret: your_secret
-    name: application_name
+jwt:
+    secretKey: your_secret
     expiresSecond: 2592000 # 三十天

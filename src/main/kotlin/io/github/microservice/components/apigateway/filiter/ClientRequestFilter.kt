@@ -4,9 +4,7 @@ import com.netflix.zuul.ZuulFilter
 import com.netflix.zuul.context.RequestContext
 import io.github.microservice.components.apigateway.security.jwt.TokenProvider
 import io.github.microservice.components.apigateway.util.HttpUtils.Companion.HEADER_AUTHORIZATION
-import io.github.microservice.components.apigateway.util.HttpUtils.Companion.HEADER_NICKNAME
 import io.github.microservice.components.apigateway.util.HttpUtils.Companion.HEADER_PHONE
-import io.github.microservice.components.apigateway.util.HttpUtils.Companion.HEADER_PHOTO
 import io.github.microservice.components.apigateway.util.HttpUtils.Companion.HEADER_USER_ID
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
@@ -55,8 +53,6 @@ class ClientRequestFilter: ZuulFilter() {
 			
 			// forward user info
 			userId = userInfo!!.id.toString()
-			ctx.addZuulRequestHeader(HEADER_NICKNAME, userInfo!!.nickname)
-			ctx.addZuulRequestHeader(HEADER_PHOTO, userInfo!!.photo)
 			ctx.addZuulRequestHeader(HEADER_PHONE, userInfo!!.phone)
 		} finally {
 			// 务必覆盖 x-user-id，防止攻击

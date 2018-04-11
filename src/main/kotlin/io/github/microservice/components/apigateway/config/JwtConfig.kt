@@ -18,13 +18,9 @@ import org.springframework.stereotype.Component
 @Component
 class JwtConfig{
 	
-	@Value("\${audience.clientId}")
-	var clientId: String? = null
-	@Value("\${audience.base64Secret}")
-	var base64Secret: String? = null
-	@Value("\${audience.name}")
-	var name: String? = null
-	@Value("\${audience.expiresSecond}")
-	var expiresSecond: Long? = null
+	@Value("\${jwt.secretKey}")
+	var secretKey: String? = null
+	@Value("\${jwt.expiresSecond}")
+	var expiresSecond: Int? = null
 	
 }

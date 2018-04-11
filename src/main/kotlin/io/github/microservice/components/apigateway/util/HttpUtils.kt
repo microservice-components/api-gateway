@@ -16,10 +16,8 @@ class HttpUtils {
 	
 	companion object {
 		
-		var HEADER_USER_ID = "X-user-id"
-		var HEADER_NICKNAME = "X-user-nickname"
-		var HEADER_PHOTO = "X-user-photo"
-		var HEADER_PHONE = "X-user-phone"
+		var HEADER_USER_ID = "x-user-id"
+		var HEADER_PHONE = "x-phone"
 		
 		var HEADER_AUTHORIZATION = "Authorization"
 		var HEADER_SIGNATURE = "Signature"

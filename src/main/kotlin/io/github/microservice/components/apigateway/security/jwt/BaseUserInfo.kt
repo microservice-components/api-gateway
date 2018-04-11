@@ -14,9 +14,7 @@ package io.github.microservice.components.apigateway.security.jwt
  */
 class BaseUserInfo {
 	
-	var photo: String? = null
 	var phone: String? = null
-	var nickname: String? = null
 	var id: Int? = null
 	
 }
